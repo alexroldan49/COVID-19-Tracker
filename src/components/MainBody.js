@@ -1,7 +1,7 @@
 import react from "react";
 
 
-function MainBody({totalCases}){
+function MainBody({totalCases, allStats}){
 
     let mill = ""
     let cases = totalCases + ""
@@ -15,15 +15,25 @@ function MainBody({totalCases}){
                 }
             }
         }
+    
         comas()
 
     return(
         <>
+            <h3 className="bold" >TOTAL COVID-19 CASES</h3>
             <h1 className="total-count" >{mill}</h1>
-            <div className="box" >
-                
+            <div className="main-grid" >
+                <div className="main-stat" >
+                    <h2>Today's Cases</h2> 
+                </div>
+                <div className="main-stat" >
+                    <h2>Today's Recoveries</h2> 
+                </div>
+                <div className="main-stat" >
+                    <h2>Total Tests</h2> 
+                </div>
             </div>
-        </>
+        </>  
     )
 }
 
