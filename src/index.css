@@ -1,6 +1,19 @@
 *{
   padding: 0;
   font-family: 'Poppins', sans-serif;
+  
+}
+h2{
+  color:rgb(65, 65, 65);
+}
+h3{
+  color:rgb(65, 65, 65);
+}
+h4{
+  color:rgb(65, 65, 65);
+}
+p{
+  color:rgb(65, 65, 65);
 }
 
 body {
@@ -86,19 +99,20 @@ code {
   margin-top:10px; 
 }
 .main-grid{
-  margin-top: 80px;
+  margin-top: 15vh;
   display:flex;
   justify-content: center;
   flex-direction: row;
-  gap: 10vw;
+  gap: 30px;
 }
 .main-stat{
   background-color: #ffffff;
   box-shadow: 0px 4px 5px 5px rgba(0, 0, 0, 0.267);
   border-radius: 7px;
-  height: 50vh;
-  width:20vw;
+  height: 40vh;
+  width:25vw;
 }
+
 @media (max-width: 800px) {
   .nav-links{
     margin-left: 8%;
