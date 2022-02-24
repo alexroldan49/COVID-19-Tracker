@@ -58,10 +58,10 @@ code {
   margin-top: 2rem;
 }
 .nav-links a{
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .nav-links a:hover{
-  color:rgb(124, 235, 207);
+  /* color:rgb(124, 235, 207); */
   transform: translateY(5px);
 }
 .center{
@@ -101,9 +101,10 @@ code {
   color: white;
   text-decoration: none;
 }
-.blue{
-  color: rgb(0, 195, 255);
+.active{
+  color: white;
   text-decoration: none;
+  transform: translateY(-10px);
 }
 .main-stat{
   background-color: #ffffff;

@@ -1,6 +1,6 @@
 import react from "react";
 
-function Country(){
+function LearnMore(){
 
     return(
         <>
@@ -8,4 +8,4 @@ function Country(){
     )
 }
 
-export default Country
+export default LearnMore

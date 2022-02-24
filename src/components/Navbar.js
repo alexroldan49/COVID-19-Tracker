@@ -6,16 +6,16 @@ function Navbar(){
         <div className="navbar" >
                 <a className="title" >COVID-19 Tracker</a>
             <div className="nav-links">
-                <NavLink className={(data)=> data.isActive ? "blue" : "white"} to="/" >
+                <NavLink className={(data)=> data.isActive ? "active" : "white"} to="/" >
                     <a>Home</a>
                 </NavLink>
-                <NavLink className={(data)=> data.isActive ? "blue" : "white"} to="/Country" >
+                <NavLink className={(data)=> data.isActive ? "active" : "white"} to="/Country" >
                     <a>Country</a>
                 </NavLink>
-                <NavLink className={(data)=> data.isActive ? "blue" : "white"} to="/Vaccines">
+                <NavLink className={(data)=> data.isActive ? "active" : "white"} to="/Vaccines">
                     <a>Vaccines</a>
                 </NavLink>
-                <NavLink className={(data)=> data.isActive ? "blue" : "white"} to="/learn-more">
+                <NavLink className={(data)=> data.isActive ? "active" : "white"}   to="/learn-more">
                     <a>Learn More</a>
                 </NavLink>
             </div>
