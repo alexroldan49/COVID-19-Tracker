@@ -9,13 +9,13 @@ function Navbar(){
                 <NavLink className={(data)=> data.isActive ? "blue" : "white"} to="/" >
                     <a>Home</a>
                 </NavLink>
-                <NavLink to="/Country" >
+                <NavLink className={(data)=> data.isActive ? "blue" : "white"} to="/Country" >
                     <a>Country</a>
                 </NavLink>
-                <NavLink to="/Vaccines">
+                <NavLink className={(data)=> data.isActive ? "blue" : "white"} to="/Vaccines">
                     <a>Vaccines</a>
                 </NavLink>
-                <NavLink to="/learn-more">
+                <NavLink className={(data)=> data.isActive ? "blue" : "white"} to="/learn-more">
                     <a>Learn More</a>
                 </NavLink>
             </div>
