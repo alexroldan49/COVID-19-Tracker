@@ -56,13 +56,14 @@ function MainBody({totalCases, allStats}){
             </div>
             <div className="info-container">
                 <div style={{marginLeft: "7vw"}} >
-                    <h1 className="bold" style={{fontSize: "2rem"}} >What is Covid-19</h1>
+                    <h1 className="bold" style={{fontSize: "3rem"}} >What is Covid-19</h1>
                     <h3 className="info" >According to the CDC, COVID-19 is a respiratory disease caused by SARS-CoV-2, a coronavirus discovered in 2019. The virus spreads mainly from person to person through respiratory droplets produced when an infected person coughs, sneezes, or talks. Some people who are infected may not have symptoms. For people who have symptoms, illness can range from mild to severe. Adults 65 years and older and people of any age with underlying medical conditions are at higher risk for severe illness.</h3>
                 </div>
+                <div style={{transform: "translateX(5%)"}} className="divider" />
                 <div className="info-with-image" >
-                    <img className="info-image" src="https://i.ibb.co/9cbNcYz/engin-akyurt-SMI1-Nh-NXszc-unsplash.jpg" />
-                    <div style={{marginRight: "5vw"}} >
-                        <h1 className="bold" >Common Covid-19 Symptoms</h1>
+                    <img className="info-image" src="https://i.ibb.co/hdJH2Cz/Untitled-1080-1920-px-1920-1080-px.png" />
+                    <div style={{marginRight: "5vw", textAlign: "left"}} >
+                        <h1 style={{textAlign: "center", fontSize: "2.5em"}} className="bold" >Common Covid-19 Symptoms</h1>
                         <h3>Some common Covid-19 symptoms are know to be</h3>
                         <ul className="symptoms-list" >
                             <li>Fever</li>
@@ -82,14 +83,15 @@ function MainBody({totalCases, allStats}){
                         <h3 style={{maxWidth: "40vw"}} >These sympotms can range from mild to severe illness. People can begin developing symptoms from 2-14 days after exposure to the virus. Please get tested if you are experiencing any of these symptoms.</h3>
                     </div>
                 </div>
+                <div style={{transform: "translateX(-5%)"}} className="divider" />
                 <div className="info-container" >
                     <div style={{justifyContent: "space-around"}} className="info-with-image">
-                        <div className="opacity-card" >
-                            <h1 style={{color: "white"}} >Variants</h1>
+                        <div style={{ marginLeft: "7vw", textAlign: "left"}} className="opacity-card" >
+                            <h1 style={{color: "white", textAlign: "center", fontSize: "3.5em"}} >Variants</h1>
                             <h3 style={{color: "white"}} >A variant is viral genome (genetic code) that may contain one or more mutations. According to Hopkins medicine, It is the nature of RNA viruses such as the coronavirus to evolve and change gradually. Geographic separation tends to result in genetically distinct variants.</h3>
                             <h3 style={{color: "white"}} >Mutations in viruses — including the coronavirus causing the COVID-19 pandemic — are neither new nor unexpected. All RNA viruses mutate over time, some more than others. For example, flu viruses change often, which is why doctors recommend that you get a new flu vaccine every year.</h3>
                         </div>
-                            <img className="info-image" src="https://i.ibb.co/hmrwYZL/fusion-medical-animation-EAg-Gq-Oi-DDMg-unsplash.jpg" />
+                            <img style={{marginTop: "0", marginRight: "7vw"}} className="info-image" src="https://i.ibb.co/zZNWLB4/Untitled-1080-1920-px-1920-1080-px-1.png" />
                     </div>
                 </div>
             </div>
