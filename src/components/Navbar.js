@@ -4,7 +4,9 @@ import {NavLink} from "react-router-dom"
 function Navbar(){
     return (
         <div className="navbar" >
+            <NavLink className={(data)=> data.isActive ? "white" : "white"} to="/" >
                 <a className="title" >COVID-19 Tracker</a>
+                </NavLink>
             <div className="nav-links">
                 <NavLink className={(data)=> data.isActive ? "active" : "white"} to="/" >
                     <a>Home</a>

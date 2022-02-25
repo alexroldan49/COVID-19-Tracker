@@ -34,8 +34,8 @@ code {
   display: flex;
   justify-content: space-between;
   align-items:center;
-  background-color: #2767e5;
-  width: 100vw;
+  background-color: #4a68f0;
+  width: 100%;
   min-height: 130px;
   flex-wrap: wrap;
 }
@@ -117,7 +117,39 @@ code {
 .main-stat h2, h3{
   margin: 30px;
 }
-
+.info{
+  max-width: 60vw;
+  line-height: 2.7em;
+  font-size: 1.4em;
+}
+.info-container{
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.info-with-image{
+  display: flex;
+  margin-top: 50px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.symptoms-list{
+  margin-left: 80px;
+  list-style:circle;
+  text-align: start;
+}
+.symptoms-list li{
+  font-size: 1.3em;
+  color:rgb(65, 65, 65);
+}
+.sick-image{
+  margin-left: 5vw;
+  margin-top: 5vw;
+  height: 40%;
+  width: 40%;
+}
 @media (max-width: 800px) {
  
 

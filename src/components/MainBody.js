@@ -54,6 +54,35 @@ function MainBody({totalCases, allStats}){
                     <h3>{`A total of ${totalTest} have been tested for covid.`} </h3>
                 </div>
             </div>
+            <div className="info-container">
+                <div style={{marginLeft: "10vw"}} >
+                    <h1 className="bold" style={{fontSize: "2rem"}} >What is Covid-19</h1>
+                    <h3 className="info" >According to the CDC, COVID-19 is a respiratory disease caused by SARS-CoV-2, a coronavirus discovered in 2019. The virus spreads mainly from person to person through respiratory droplets produced when an infected person coughs, sneezes, or talks. Some people who are infected may not have symptoms. For people who have symptoms, illness can range from mild to severe. Adults 65 years and older and people of any age with underlying medical conditions are at higher risk for severe illness.</h3>
+                </div>
+                <div className="info-with-image" >
+                    <img className="sick-image" src="https://i.ibb.co/9cbNcYz/engin-akyurt-SMI1-Nh-NXszc-unsplash.jpg" />
+                    <div style={{marginRight: "5vw"}} >
+                        <h1 className="bold" >Common Covid-19 Symptoms</h1>
+                        <h3>Some common Covid-19 symptoms are know to be</h3>
+                        <ul className="symptoms-list" >
+                            <li>Fever</li>
+                            <li>Chills</li>
+                            <li>Cough</li>
+                            <li>Shortness of breath or difficulty breathing</li>
+                            <li>Muscle or body aches</li>
+                            <li>Fatigue</li>
+                            <li>Headaches</li>
+                            <li>New loss of taste or smell</li>
+                            <li>Sore throat</li>
+                            <li>Congenstion or runny nose</li>
+                            <li>Nasusea, or vomiting</li>
+                            <li>Diarrhea</li>
+                            <li>And more</li>
+                        </ul>
+                        <h3 style={{maxWidth: "40vw"}} >These sympotms can range from mild to severe illness. People can begin developing symptoms from 2-14 days after exposure to the virus. Please get tested if you are experiencing any of these symptoms.</h3>
+                    </div>
+                </div>
+            </div>
         </>  
     )
 }
