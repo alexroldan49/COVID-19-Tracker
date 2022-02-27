@@ -1,9 +1,11 @@
 import react from "react";
+import GeoChart from "./GeoChart";
 
-function Country(){
+function Country({allCountriesData, geoData}){
 
     return(
         <>
+            <GeoChart geoData={geoData} allCountriesData={allCountriesData} />
         </>
     )
 }

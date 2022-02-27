@@ -8,16 +8,12 @@ function MainBody({totalCases, allStats}){
         function comas(num){
             let newNum = ""
             let oldNum = num + ""
-            console.log(oldNum)
             let byThree = 0
             for(let i= oldNum.length -1; i >= 0 ; i--){
-                console.log(oldNum[i])
-                console.log(newNum)
                 if( byThree  % 3 === 0 && byThree > 0){
                     newNum += ","
                     newNum += oldNum[i]
                     byThree++
-                    console.log(newNum)
                 }else{
                     newNum += oldNum[i]
                     byThree ++
@@ -32,8 +28,6 @@ function MainBody({totalCases, allStats}){
      let totalTest = comas(allStats.tests)
      let totalRecoversToday = comas(allStats.todayRecovered)
 
-     console.log(allStats.todayCases)
-
     return(
         <>
             <h3 className="bold" >TOTAL COVID-19 CASES</h3>
@@ -42,15 +36,15 @@ function MainBody({totalCases, allStats}){
             <h2 style={{color: "#175987", padding: "0", margin: "0", marginTop: "20px"}} >Stay informed with the latest statistics for COVID-19</h2>
             <div className="main-grid" >
                 <div className="main-stat" >
-                    <h2>Today's Cases</h2>
-                    <h3>{`Today there have been ${todaysCases} additional cases throughout the world`}</h3>
+                    <h1>Today's Cases</h1>
+                    <h3 className="stat-font" >{`Today there have been ${todaysCases} additional cases throughout the world`}</h3>
                 </div>
                 <div className="main-stat" >
-                    <h2>Today's Recoveries</h2> 
+                    <h1>Today's Recoveries</h1> 
                     <h3>{`${totalRecoversToday} people have recovered from covid today.`}</h3>
                 </div>
                 <div className="main-stat" >
-                    <h2 className="">Total Tests</h2> 
+                    <h1 className="">Total Tests</h1> 
                     <h3>{`A total of ${totalTest} have been tested for covid.`} </h3>
                 </div>
             </div>
