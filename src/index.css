@@ -1,6 +1,20 @@
 *{
   padding: 0;
   font-family: 'Poppins', sans-serif;
+  
+}
+h2{
+  font-size: 2em;
+  color:rgb(65, 65, 65);
+}
+h3{
+  color:rgb(65, 65, 65);
+}
+h4{
+  color:rgb(65, 65, 65);
+}
+p{
+  color:rgb(65, 65, 65);
 }
 
 body {
@@ -20,7 +34,7 @@ code {
   display: flex;
   justify-content: space-between;
   align-items:center;
-  background-color: #2767e5;
+  background-color: #4a68f0;
   width: 100%;
   min-height: 130px;
   flex-wrap: wrap;
@@ -44,11 +58,7 @@ code {
   margin-top: 2rem;
 }
 .nav-links a{
-  transition: 0.5s;
-}
-.nav-links a:hover{
-  color:rgb(124, 235, 207);
-  transform: translateY(5px);
+  transition: 0.3s;
 }
 .center{
     display:flex;
@@ -67,15 +77,6 @@ code {
   font-size: 5rem;
   color:rgb(65, 65, 65);
 }
-
-.box{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 5rem;
-  width: 5rem;
-  background-color: #cccccc;
-}
 .bold{
   font-family: 'Poppins', sans-serif;
   font-weight: 800;
@@ -86,24 +87,84 @@ code {
   margin-top:10px; 
 }
 .main-grid{
-  margin-top: 80px;
+  margin-top: 11vh;
   display:flex;
   justify-content: center;
   flex-direction: row;
-  gap: 10vw;
+  gap: 30px;
+}
+.white{
+  color: white;
+  text-decoration: none;
+}
+.active{
+  color: white;
+  text-decoration: none;
+  transform: translateY(-10px);
 }
 .main-stat{
   background-color: #ffffff;
   box-shadow: 0px 4px 5px 5px rgba(0, 0, 0, 0.267);
   border-radius: 7px;
-  height: 50vh;
-  width:20vw;
+  min-height: 25vh;
+  width:25vw;
+  display: flow-root;
+margin-bottom: 40px;
+}
+.main-stat h2, h3{
+  margin: 30px;
+}
+.info{
+  max-width: 60vw;
+  line-height: 2em;
+  font-size: 1.4em;
+  text-align: left;
+}
+.info-container{
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.info-with-image{
+  display: flex;
+  margin-top: 50px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.symptoms-list{
+  margin-left: 80px;
+  list-style:circle;
+  text-align: start;
+}
+.symptoms-list li{
+  font-size: 1.3em;
+  color:rgb(65, 65, 65);
+}
+.info-image{
+  border-radius: 5px;
+  margin-left: 5vw;
+  margin-top: 5vw;
+  height:fit-content;
+  width: 40%;
+}
+.opacity-card{
+  background-color: #0e0e0ee5;
+  box-shadow: 0px 4px 5px 5px rgba(0, 0, 0, 0.267);
+  border-radius: 7px;
+  height: fit-content;
+  width:40vw;
+  display: flow-root;
+}
+.divider{
+  border-radius: 20px;
+  width: 80%;
+  height: 12px;
+  background-color: #4a68f0;
+  margin-top: 40px;
 }
 @media (max-width: 800px) {
-  .nav-links{
-    margin-left: 8%;
-    margin-right: 0;
-    align-items: center;
-    gap: 3rem;
-  }
+ 
+
 }
