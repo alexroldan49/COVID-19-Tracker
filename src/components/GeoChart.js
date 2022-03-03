@@ -3,7 +3,7 @@ import Chart from "react-google-charts";
 
 function GeoChart({allCountriesData, geoData}){
       const options = {
-        colorAxis: { colors: ["rgb(255, 177, 177)", "rgb(226, 90, 90)", "#e31b23"] },
+        colorAxis: { colors: ["rgb(255, 124, 124)", "#e31b23", "rgb(139, 2, 2)"] },
         // backgroundColor: "#81d4fa",
         datalessRegionColor: "#f8bbd0",
         defaultColor: "#f5f5f5",

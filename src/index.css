@@ -137,7 +137,7 @@ code {
   flex-direction: row;
   justify-content: space-between;
   padding-top: 40px;
-  width: 95vw
+  width: 95vw;
 }
 .symptoms-list{
   margin-left: 80px;
@@ -169,6 +169,40 @@ code {
   height: 12px;
   background-color: #4a68f0;
   margin-top: 40px;
+}
+.country-tab{
+  height: 7vh;
+  width: 100%;
+  background-color: #b8b8b8;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content:flex-start;
+}
+.btn-tab-group{
+  margin-left: 10vw;
+}
+.tab-btn{
+  height: 5vh;
+  min-width: 5vw;
+  margin-left: 5vw;
+  padding: 10px;
+  border-radius: 10px;
+  border-style:none;
+  box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.267);
+}
+.tab-btn:active{
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.267);
+}
+.country-select-field{
+  margin-left: 20px;
+  text-align:left;
+  width: 30vw;
+  min-height: 20vh;
+  padding: 20px;
+}
+.country-select-field legend{
+  margin-left: 40px;
 }
 @media (max-width: 800px) {
  

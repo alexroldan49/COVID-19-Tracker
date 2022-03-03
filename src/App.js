@@ -43,16 +43,18 @@ function App() {
     }
   })
 
-  let geoData = [["Country", "Covid-19 Cases"], ...mappedCountries]
+  let allCountries = allCountriesData.map( con =>{
+    return con.country
+  })
 
-  console.log(geoData)
+  let geoData = [["Country", "Covid-19 Cases"], ...mappedCountries]
   
   return (
     <div className="App">
       <Navbar />
       <Routes>
         <Route path="/" element={<MainPage totalCases={totalCases} />} />
-        <Route path="Country" element={<Country geoData={geoData} allCountriesData={allCountriesData} />} />
+        <Route path="Country" element={<Country allCountries={allCountries} geoData={geoData} allCountriesData={allCountriesData} />} />
         <Route path="Vaccines" element={<Vaccines />} />
         <Route path="Learn-more" element={<LearnMore />} />
       </Routes>
