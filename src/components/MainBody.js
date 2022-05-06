@@ -29,8 +29,8 @@ function MainBody({totalCases, allStats}){
      let totalRecoversToday = comas(allStats.todayRecovered)
 
     return(
-        <>
-            <h3 className="bold" >TOTAL COVID-19 CASES</h3>
+        <body>
+            <p className="bold" >TOTAL COVID-19 CASES</p>
             <h1 className="total-count" >{cases}</h1>
             <h3 style={{fontWeight: "800", margin: "0", padding: "0", fontSize: "1.7rem"}} >People Throughout the World</h3>
             <h2 style={{color: "#175987", padding: "0", margin: "0", marginTop: "20px"}} >Stay informed with the latest statistics for COVID-19</h2>
@@ -48,14 +48,14 @@ function MainBody({totalCases, allStats}){
                     <h3>{`A total of ${totalTest} have been tested for covid.`} </h3>
                 </div>
             </div>
-            <div className="info-container">
+            <section className="info-container">
                 <div style={{marginLeft: "7vw"}} >
                     <h1 className="bold" style={{fontSize: "3rem"}} >What is Covid-19</h1>
                     <h3 className="info" >According to the CDC, COVID-19 is a respiratory disease caused by SARS-CoV-2, a coronavirus discovered in 2019. The virus spreads mainly from person to person through respiratory droplets produced when an infected person coughs, sneezes, or talks. Some people who are infected may not have symptoms. For people who have symptoms, illness can range from mild to severe. Adults 65 years and older and people of any age with underlying medical conditions are at higher risk for severe illness.</h3>
                 </div>
                 <div style={{transform: "translateX(5%)"}} className="divider" />
                 <div className="info-with-image" >
-                    <img className="info-image" src="https://i.ibb.co/hdJH2Cz/Untitled-1080-1920-px-1920-1080-px.png" />
+                    <img loading="lazy" className="info-image" src="https://i.ibb.co/hdJH2Cz/Untitled-1080-1920-px-1920-1080-px.png" />
                     <div style={{marginRight: "5vw", textAlign: "left"}} >
                         <h1 style={{textAlign: "center", fontSize: "2.5em"}} className="bold" >Common Covid-19 Symptoms</h1>
                         <h3>Some common Covid-19 symptoms are know to be</h3>
@@ -88,8 +88,8 @@ function MainBody({totalCases, allStats}){
                             <img loading="lazy" style={{marginTop: "0", marginRight: "7vw"}} className="info-image" src="https://i.ibb.co/zZNWLB4/Untitled-1080-1920-px-1920-1080-px-1.png" />
                     </div>
                 </div>
-            </div>
-        </>  
+            </section>
+        </body>  
     )
 }
 
