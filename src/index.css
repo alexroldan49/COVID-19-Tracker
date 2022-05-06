@@ -187,7 +187,7 @@ code {
   min-width: 5vw;
   margin-left: 5vw;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
   border-style:none;
   box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.267);
 }
@@ -198,13 +198,36 @@ code {
   margin-left: 20px;
   text-align:left;
   width: 30vw;
-  min-height: 20vh;
+  min-height: 15vh;
   padding: 20px;
 }
 .country-select-field legend{
   margin-left: 40px;
+  padding: 0px 25px 0px 25px;
+}
+.country-grid{
+  margin: 3%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap : 10vw;
+}
+.vaccine-banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #c04560;
+}
+.vaccine-banner p{
+color: white;
+}
+.vaccination-banner{
+  width:100%;
 }
 @media (max-width: 800px) {
  
+  .country-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
 
 }

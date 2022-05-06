@@ -1,32 +1,29 @@
 import react from "react";
+import { NavLink, Route, Routes } from "react-router-dom";
 import GeoChart from "./GeoChart";
+import PieChartPage from "./PieChartPage";
 
 function Country({allCountries, allCountriesData, geoData}){
 
-    let allCountryOptions = allCountries.map(con=>{
-        return <option value={con}/>
-    })
+  
+  
 
     return(
         <>
             <div className="country-tab" >
                 <div className="btn-tab-group" >
-                    <button className="tab-btn" >Map</button>
-                    <button className="tab-btn" >Search</button>
+                    <NavLink to="/Country/global" >
+                        <button className="tab-btn" >Map</button>
+                    </NavLink>
+                    <NavLink to="/Country/search-country" >
+                        <button className="tab-btn" >Search</button>
+                    </NavLink>
                 </div>
             </div>
-            <fieldset className="country-select-field" >
-                <legend>Select Country</legend>
-                <label>Country</label>
-                <div>
-                    <input list="countries" type="text" />
-                    <datalist style={{height: "50px"}} id="countries" >
-                        {allCountryOptions}
-                    </datalist>
-                </div>
-            </fieldset>
-            <h2></h2>
-            <GeoChart geoData={geoData} allCountriesData={allCountriesData} />
+        <Routes>
+            <Route path="search-country" element={<PieChartPage allCountriesData={allCountriesData} allCountries={allCountries} />} />
+            <Route path="global" element={<GeoChart geoData={geoData} allCountriesData={allCountriesData} />} />
+        </Routes>
         </>
     )
 }

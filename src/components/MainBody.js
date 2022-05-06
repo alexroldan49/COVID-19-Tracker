@@ -85,7 +85,7 @@ function MainBody({totalCases, allStats}){
                             <h3 style={{color: "white"}} >A variant is viral genome (genetic code) that may contain one or more mutations. According to Hopkins medicine, It is the nature of RNA viruses such as the coronavirus to evolve and change gradually. Geographic separation tends to result in genetically distinct variants.</h3>
                             <h3 style={{color: "white"}} >Mutations in viruses — including the coronavirus causing the COVID-19 pandemic — are neither new nor unexpected. All RNA viruses mutate over time, some more than others. For example, flu viruses change often, which is why doctors recommend that you get a new flu vaccine every year.</h3>
                         </div>
-                            <img style={{marginTop: "0", marginRight: "7vw"}} className="info-image" src="https://i.ibb.co/zZNWLB4/Untitled-1080-1920-px-1920-1080-px-1.png" />
+                            <img loading="lazy" style={{marginTop: "0", marginRight: "7vw"}} className="info-image" src="https://i.ibb.co/zZNWLB4/Untitled-1080-1920-px-1920-1080-px-1.png" />
                     </div>
                 </div>
             </div>
