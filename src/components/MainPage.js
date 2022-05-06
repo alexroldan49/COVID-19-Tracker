@@ -3,19 +3,7 @@ import { useState, useEffect } from "react";
 import MainBody from "./MainBody";
 
 
-function MainPage(){
-
-    let [totalCases, setTotalCases] = useState({})
-    const API = "https://disease.sh/v3/covid-19/all"
-
-    useEffect(()=>{
-        fetch(API)
-        .then(r => r.json())
-        .then(cases => setTotalCases(cases))
-        .then(console.log(totalCases.cases))
-        .catch(error => console.log(error))
-    }, [])
-
+function MainPage( {totalCases} ){
     return (
         <>
         <div className="center" >

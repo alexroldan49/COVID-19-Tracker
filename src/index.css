@@ -109,7 +109,10 @@ code {
   min-height: 25vh;
   width:25vw;
   display: flow-root;
-margin-bottom: 40px;
+  margin-bottom: 40px;
+}
+.stat-font{
+  font-size: 1.5em;
 }
 .main-stat h2, h3{
   margin: 30px;
@@ -128,10 +131,13 @@ margin-bottom: 40px;
   flex-direction: column;
 }
 .info-with-image{
+  background-color: rgba(153, 153, 153, 0.178);
   display: flex;
   margin-top: 50px;
   flex-direction: row;
   justify-content: space-between;
+  padding-top: 40px;
+  width: 95vw;
 }
 .symptoms-list{
   margin-left: 80px;
@@ -164,7 +170,64 @@ margin-bottom: 40px;
   background-color: #4a68f0;
   margin-top: 40px;
 }
+.country-tab{
+  height: 7vh;
+  width: 100%;
+  background-color: #b8b8b8;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content:flex-start;
+}
+.btn-tab-group{
+  margin-left: 10vw;
+}
+.tab-btn{
+  height: 5vh;
+  min-width: 5vw;
+  margin-left: 5vw;
+  padding: 10px;
+  border-radius: 5px;
+  border-style:none;
+  box-shadow: 0px 1px 2px 2px rgba(0, 0, 0, 0.267);
+}
+.tab-btn:active{
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.267);
+}
+.country-select-field{
+  margin-left: 20px;
+  text-align:left;
+  width: 30vw;
+  min-height: 15vh;
+  padding: 20px;
+}
+.country-select-field legend{
+  margin-left: 40px;
+  padding: 0px 25px 0px 25px;
+}
+.country-grid{
+  margin: 3%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap : 10vw;
+}
+.vaccine-banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #c04560;
+}
+.vaccine-banner p{
+color: white;
+}
+.vaccination-banner{
+  width:100%;
+}
 @media (max-width: 800px) {
  
+  .country-grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
 
 }
